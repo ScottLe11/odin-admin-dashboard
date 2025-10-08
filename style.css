@@ -1,3 +1,10 @@
-p{
-    color:aqua;
+.search-btn, .notification-btn, .profile-btn{
+    background: none;
+    border:none;
 }
+
+.search-icon, .bell-icon, .profile-icon{
+    width: 25px;
+    height: 25px;
+}
+
