@@ -49,17 +49,26 @@ body{
 
 .main{
     margin: 1rem;
+    /* grid-column: 2/4; */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: stretch;
+    gap: 25px;
+    
 }
 
 .main p{
     margin-top: 0;
 }
 
-.content{
-    grid-column: 2 / 3;
+.projects-grid{
+    /* grid-column: 2 / 3;
+    grid-row: 3 /5; */
+    gap:20px;
     display:grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto-fit; 
+    /* grid-template-rows: auto-fit; */
+    align-items:stretch;
     
 }
 
@@ -67,12 +76,17 @@ body{
     border:1px solid black;
 }
 
-.window{
+.right-sidebar{
+
     display: grid;
-    grid-column: 3 / 4;
-    grid-row: 3 / 5;
+    /* grid-column: 3 / 4;
+    grid-row: 3 / 5; */
+    /* grid-row: auto-fit; */
+    grid-template-columns: 1fr  ;
+    grid-template-rows: auto-auto;
     row-gap: 75px;
     margin: 1rem;
+    gap:0px;
 }
 
 .announcements, .trending{
