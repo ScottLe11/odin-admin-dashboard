@@ -16,7 +16,7 @@
                 <img src = "img/magnify.svg" alt = "Search" class = "search-icon">
             </button>
 
-            <input type = "text">
+            <input class = "searchbar" type = "text">
 
             <button type = "button" aria-label="Notification" class = "notification-btn">
                 <img src = "img/bell-ring-outline.svg" class = "bell-icon">
@@ -34,34 +34,42 @@
             <button type = "button" aria-label="Profile" class = "profile-btn">
                 <img src = "img/face-man-profile.svg" class = "profile-icon">
             </button>
-            <p class = "p-inline">Hello</p>
+            <div class = "nav-greeting">
+                <p class = "p-inline">Hello</p>
+                <p>Scott Le (@scottle)</p>
+            </div>
+            <div class = "nav-actions">
+                <button type = "button" aria-label="Profile" >New</button>
+                <button type = "button" aria-label="Profile" >Upload</button>
+                <button type = "button" aria-label="Profile" >Share</button>
+            </div>
             
-
-            <button type = "button" aria-label="Profile" >New</button>
-            <button type = "button" aria-label="Profile" >Upload</button>
-            <button type = "button" aria-label="Profile" >Share</button>
-            <p>Scott Le (@scottle)</p>
         </div>
 
         <div class = "sidebar">
             <div class = "logo">
-                <img src = "..." alt = "Logo">
+                <img src = "img/view-dashboard.svg" alt = "Logo" class = "svg-logo">
                 <h1 class = "h1-inline">Dashboard</h1>
             </div>
 
 
             <div class = "options">
-                <ul>
-                    <li>Home</li>
-                    <li>Profile</li>
-                    <li>Messages</li>
-                    <li>History</li>
-                    <li>Tasks</li>
-                    <li>Communities</li>
-
-                    <li>Settings</li>
-                    <li>Support</li>
-                    <li>Privacy</li>
+                <ul class = "firstHalf">
+                    
+                    <li><img src = "img/home.svg"><p>Home</p></li>
+                    <li><img src = "img/card-account-details-outline.svg"><p>Profile</p></li>
+                    <li><img src = "img/message-reply.svg"><p>Messages</p></li>
+                    <li><img src = "img/clock-time-three-outline.svg"><p>History</p></li>
+                    <li><img src = "img/note-multiple.svg"><p>Task</p></li>
+                    <li><img src = "img/account-group.svg"><p>Community</p></li>
+                    
+                 </ul>
+                 <ul class = "secondHalf">
+                    
+                    <li><img src = "img/cog.svg"><p>Settings</p></li>
+                    <li><img src = "img/help-box.svg"><p>Support</p></li>
+                    <li><img src = "img/shield-check.svg"><p>Privacy</p></li>
+                    
 
                 </ul>
             </div>
