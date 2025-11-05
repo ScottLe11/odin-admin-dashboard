@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard</title>
     <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
@@ -17,15 +17,16 @@
             </button>
 
             <input id = "searchbar" type = "text">
-
-            <button type = "button" aria-label="Notification" class = "notification-btn">
-                <img src = "img/bell-ring-outline.svg" class = "bell-icon">
-            </button>
-            
-            <button type = "button" aria-label="Profile" class = "profile-btn">
-                <img src = "img/Metaphor_DesktopWallpaper2_1920x1080.jpg" class = "profile-icon">
-            </button>
-            <p class = "p-inline">Scott Le</p>
+            <div class = "upperSettings">
+                <button type = "button" aria-label="Notification" class = "notification-btn">
+                    <img src = "img/bell-ring-outline.svg" class = "bell-icon">
+                </button>
+                
+                <button type = "button" aria-label="Profile" class = "profile-btn">
+                    <img src = "img/Metaphor_DesktopWallpaper2_1920x1080.jpg" class = "profile-icon">
+                </button>
+                <p class = "p-inline">Scott Le</p>
+            </div>
             
             
         </div>
@@ -77,7 +78,7 @@
 
         <div class = "main">
             <div class = "content">
-                <p>Your Projects</p>
+                <p><b>Your Projects</b></p>
                 <div class="projects-grid">
                     <div class = "project">
                         <h3>Super Cool Project</h3>
@@ -114,7 +115,7 @@
         
 
             <div class = "right-sidebar">
-                <p>Announcements</p>
+                <p><b>Announcements</b></p>
                 <div class = "window announcements">
                     
                     <div class = "announcement">
@@ -132,32 +133,40 @@
                         <p>Test text</p>
                     </div>
                 </div>
-                
+                <b>Trending</b>
                 <div class = "window trending">
-                    <p>Trending</p>
+                    <!-- <b>Trending</b> -->
                     <div class = "trending-list">
                         <div class = "user">
                             <img src = "img/face-man-profile.svg" class = "profile-icon" alt = "user profile img">
-                            <b>@tegan</b>
-                            <p>World Peace Builder</p>
+                            <div class = "description">
+                                <b>@tegan</b>
+                                <p>World Peace Builder</p>
+                            </div>
                         </div>
 
                         <div class = "user">
                             <img src = "img/face-man-profile.svg" class = "profile-icon" alt = "user profile img">
-                            <b>@morgan</b>
-                            <p>Super Cool Project</p>
+                            <div class = "description">
+                                <b>@morgan</b>
+                                <p>Super Cool Project</p>
+                            </div>
                         </div>
 
                         <div class = "user">
                             <img src = "img/face-man-profile.svg" class = "profile-icon" alt = "user profile img">
-                            <b>@kendall</b>
-                            <p>Life Changing App</p>
+                            <div class = "description">
+                                <b>@kendall</b>
+                                <p>Life Changing App</p>
+                            </div>
                         </div>
 
                         <div class = "user">
                             <img src = "img/face-man-profile.svg" class = "profile-icon" alt = "user profile img">
-                            <b>@alex</b>
-                            <p>No Traffic Maker</p>
+                            <div class = "description">
+                                <b>@alex</b>
+                                <p>No Traffic Maker</p>
+                            </div>
                         </div>
                     </div>
                 </div>
